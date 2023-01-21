@@ -1,0 +1,36 @@
+.Feed {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.feed__header {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 800px) {
+  .Feed {
+    padding-top: 0;
+    border-right: 1px solid var(--twitter-background);
+    overflow-y: scroll;
+  }
+
+  .feed__header {
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 10px 20px 40px 15px;
+  }
+
+  .feed__header > h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+  }
+}

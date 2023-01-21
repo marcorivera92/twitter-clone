@@ -1,0 +1,44 @@
+.NewPost {
+  border-bottom: 1px solid var(--twitter-background);
+}
+
+.NewPost > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.postBox__input {
+  display: flex;
+  padding: 20px;
+}
+
+.postBox__input > input {
+  margin-left: 20px;
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+}
+
+.postBox__input > input:focus {
+  outline: none;
+}
+
+.postBox__footer {
+  display: flex;
+  border-top: 1px solid var(--twitter-background);
+  padding-bottom: 10px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+  .NewPost {
+    display: none;
+  }
+}
